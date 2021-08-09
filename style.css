@@ -25,7 +25,7 @@ html {
 
   h1 a {
    margin: 0;
-   font-size: 5vmin;
+   font-size: 4vmin;
    font-family: 'Poppins', sans-serif;
    font-weight: lighter;
    color: white;
@@ -39,6 +39,32 @@ html {
      cursor: pointer;
      color:#D19B71;
  }
+
+ .loader {
+    height: 100%;
+    width: 100%;
+    background-color: #172C4D;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 999;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  
+  .loader__gif {
+      height: 70vh;
+      width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 
 
 
