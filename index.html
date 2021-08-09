@@ -7,6 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complok Pitch Deck</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            var myVar;
+            $("#myDiv").click(function () {
+                myFunction(this);
+            });
+
+            function myFunction(div) {
+                $("#loader").toggle();
+                $(div).toggle();
+
+            }
+            š
+
+        });
+    </script>
 </head>
 
 <body>
@@ -14,11 +32,14 @@
 
 
     </div class="text">
-    <h1><a onclick="loader" href="pitch.pdf">Open Complok e-Learning Pitch Deck</a></h1>
+    <h1><a id="myDiv" href="pitch.pdf#toolbar=0">Open Complok e-Learning Pitch Deck</a></h1>
+    </div>
+
+    <div id="loader">
+        <img src="light.png" alt="">
     </div>
 
 
-    <script src="index.js"></script>
 </body>
 
 </html>
