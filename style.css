@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 html {
-   
+  overflow-x: hidden;
+  overflow-y: hidden;
   }
   
   *, *:before, *:after {
@@ -11,92 +12,34 @@ html {
   body {
     margin: 0;
     padding: 2em;
-    flex-direction: column;
+    height: 100vh;
     background: #172C4D;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
-  .landing{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .right{
-      color: #fff;
-      display:flex;
-      flex-direction: column;
-      
-      line-height: 1;
- 
-  }
 
-  .text h1 {
+  h1 a {
    margin: 0;
-   font-size: 8vmin;
+   font-size: 5vmin;
    font-family: 'Poppins', sans-serif;
    font-weight: lighter;
-   
+   color: white;
+   text-align: center;
+   text-decoration: none;
   }
 
-  .illustration img{
-    height: 80vh;
-    width: auto;
-     
-  }
+ 
 
-  .illustration {
-      padding-left: 10vw;
-  }
-
-  .logo img{
-      height: 7vh;
-      width: auto;
-      margin-bottom: 4vh;
-  }
-
- .cta{
-     background-color: #D19B71;
-     height: 7vh;
-     width: 20vw;
-     border-radius: 30px;
-     border-style: none;
-     margin-top: 5vh;
-     font-weight: 550;
-     font-size: 16px;
-     color: #ffff;
-         
- }
-
-.cta a{
-    text-decoration: none;
-    color: #ffff;
-}
-
- .cta:hover{
+ h1 a:hover{
      cursor: pointer;
-     opacity: 80%;
+     color:#D19B71;
  }
 
- .pdf{
-     height: 100vh;
-     width: 90vw;
-     overflow-x: hidden;
-     
- }
 
- .pdf embed{
-    width: 100vw;
-    height: 100%;
-     background-color: #172C4D;
-     
-     
-     
- }
 
 
