@@ -16,12 +16,17 @@ html {
     background: #172C4D;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
   }
 
-
+.illustration img{
+    height: 70vh;
+    width: auto;
+}
 
   h1 a {
    margin: 0;
@@ -35,38 +40,27 @@ html {
 
  
 
- h1 a:hover{
-     cursor: pointer;
-     color:#D19B71;
+
+
+ button{
+     
+     padding: 20px;
+     color: white;
+     background-color: #ae7e59;
+     border-style: none;
+     border-radius: 30px;
+     margin-top: 0;
  }
 
- #loader {
-    display:none;
-    height: 100%;
-    width: 100%;
-    background-color: #172C4D;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    z-index: 999;
-    -webkit-transition: all ease-in-out 0.5s;
-    transition: all ease-in-out 0.5s;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
-  }
-  
-  #loader img {
-      height: 70vh;
-      width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
+ button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
 
-
+button a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+}
 
 
